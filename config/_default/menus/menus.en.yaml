@@ -1262,7 +1262,7 @@ main:
     url: /synthetics/ci/
     parent: synthetics
     identifier: synthetics_ci
-    weight: 4  
+    weight: 4
   - name: APM Integration
     url: synthetics/apm/
     parent: synthetics
@@ -1275,7 +1275,7 @@ main:
   - name: Metrics
     url: synthetics/metrics/
     parent: synthetics
-    weight: 7  
+    weight: 7
   - name: Settings
     url: synthetics/settings/
     parent: synthetics
@@ -2580,6 +2580,14 @@ api_v2:
   - name: Logs
     url: /api/v2/logs/
     identifier: Logs
+    generated: true
+  - name: Get a quick list of logs
+    parent: Logs
+    url: get-a-quick-list-of-logs
+    generated: true
+  - name: Get a list of logs
+    parent: Logs
+    url: get-a-list-of-logs
     generated: true
   - name: Logs Archives
     url: /api/v2/logs-archives/
